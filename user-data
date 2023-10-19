@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: johndoe
+    lock_passwd: true
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAABxxxxBEa john@example.com
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    shell: /bin/bash
